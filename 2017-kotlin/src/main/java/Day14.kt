@@ -1,3 +1,5 @@
+import net.zomis.advent.Day
+
 class Day14: Day<String> {
     override fun parse(text: String): String {
         return text

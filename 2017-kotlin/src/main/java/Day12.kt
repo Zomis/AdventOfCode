@@ -1,3 +1,4 @@
+import net.zomis.advent.Day
 
 class Day12: Day<Map<Int, List<Int>>> {
     override fun parse(text: String): Map<Int, List<Int>> {

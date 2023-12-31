@@ -1,3 +1,5 @@
+import net.zomis.advent.Day
+
 class Day15: Day<Pair<Int, Int>> {
     override fun parse(text: String): Pair<Int, Int> {
         val arr = text.lines().map { it.substringAfter("starts with ").toInt() }.toIntArray()

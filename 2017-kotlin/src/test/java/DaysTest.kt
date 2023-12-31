@@ -1,3 +1,4 @@
+import net.zomis.advent.Day
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.DynamicTest
 import org.junit.jupiter.api.TestFactory

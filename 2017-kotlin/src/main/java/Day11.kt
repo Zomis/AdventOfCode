@@ -1,3 +1,5 @@
+import net.zomis.advent.Day
+
 class Day11: Day<List<String>> {
     override fun parse(text: String): List<String> {
         return text.split(",")

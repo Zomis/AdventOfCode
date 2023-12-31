@@ -1,3 +1,5 @@
+import net.zomis.advent.Day
+
 class Day22: Day<Array<BooleanArray>> {
     override fun parse(text: String): Array<BooleanArray> {
         return text.lines().map { it.toCharArray().map { it == '#' }.toBooleanArray() }.toTypedArray()

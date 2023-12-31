@@ -1,3 +1,5 @@
+import net.zomis.advent.Day
+
 fun String.substringBetween(after: String, before: String): String {
     return this.substringAfter(after).substringBefore(before)
 }

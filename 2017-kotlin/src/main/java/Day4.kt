@@ -1,3 +1,4 @@
+import net.zomis.advent.Day
 import java.util.stream.Collectors
 
 class Day4: Day<String> {

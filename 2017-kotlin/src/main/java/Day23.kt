@@ -1,3 +1,5 @@
+import net.zomis.advent.Day
+
 class Day23: Day<List<Day18.Instruction18>> {
     val day18 = Day18()
     override fun parse(text: String): List<Day18.Instruction18> {

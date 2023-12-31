@@ -1,3 +1,4 @@
+import net.zomis.advent.Day
 import java.util.*
 
 class Day3: Day<Int> {

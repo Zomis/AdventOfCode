@@ -1,3 +1,5 @@
+import net.zomis.advent.Day
+
 class Day5: Day<IntArray> {
 
     override fun parse(text: String): IntArray {

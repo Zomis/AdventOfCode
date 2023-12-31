@@ -8,7 +8,6 @@ object Day10 {
         }
         part1 {
             val diffs = input.sorted().zipWithNext().map { it.second - it.first }.groupingBy { it }.eachCount().mapValues { it.value + 1 }
-            println(diffs)
             diffs.getValue(1L) * diffs.getValue(3L)
         }
         part2 {

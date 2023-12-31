@@ -1,4 +1,4 @@
-import java.util.*
+import net.zomis.advent.Day
 
 class Day17: Day<Int> {
     override fun parse(text: String): Int {

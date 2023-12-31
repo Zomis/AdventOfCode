@@ -1,3 +1,5 @@
+import net.zomis.advent.Day
+
 class Day13: Day<Map<Int, Int>> {
     override fun parse(text: String): Map<Int, Int> {
         return text.lineSequence().associateBy({ it.substringBefore(": ").toInt() }, { it.substringAfter(": ").toInt() })

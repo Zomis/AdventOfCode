@@ -1,3 +1,5 @@
+import net.zomis.advent.Day
+
 fun Array<BooleanArray>.strRep(): String {
     return map { it.map { if (it) '#' else '.' }.joinToString("") }.joinToString("/")
 }

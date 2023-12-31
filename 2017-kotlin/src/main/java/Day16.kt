@@ -1,3 +1,4 @@
+import net.zomis.advent.Day
 
 typealias DanceMove = (MutableList<String>) -> Unit
 class Day16: Day<List<DanceMove>> {

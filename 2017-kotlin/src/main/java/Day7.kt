@@ -1,3 +1,4 @@
+import net.zomis.advent.Day
 import java.util.HashMap
 
 class Day7: Day<Map<String, Day7.ProgramTree>> {

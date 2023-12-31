@@ -1,3 +1,5 @@
+import net.zomis.advent.Day
+
 class Day20: Day<List<Day20.PosVecAcc>> {
 
     override fun parse(text: String): List<PosVecAcc> {

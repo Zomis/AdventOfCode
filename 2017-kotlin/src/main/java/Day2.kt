@@ -1,3 +1,4 @@
+import net.zomis.advent.Day
 import java.util.regex.Pattern
 
 class Day2: Day<Array<IntArray>> {

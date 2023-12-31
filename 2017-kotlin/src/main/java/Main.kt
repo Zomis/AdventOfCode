@@ -1,17 +1,20 @@
+import net.zomis.advent.Day
+
 fun main(args: Array<String>) {
-    var range: IntProgression = 1..25
-    //range = 25 downTo 1
-    for (day in range) {
+    val year = 2023
+    val range: IntProgression = 1..25
+    val packageName = if (year == 2017) "" else "net.zomis.advent.year$year."
+    for (day in range.reversed()) {
         val d: Day<Any>
         try {
-            val cl = Day::class.java.classLoader.loadClass("Day$day")
+            val cl = Day::class.java.classLoader.loadClass(packageName + "Day$day")
             println(cl.simpleName)
             d = cl.newInstance() as Day<Any>
         } catch (ex: ClassNotFoundException) {
             continue
         }
         println("Load $day")
-        val url = d.javaClass.classLoader.getResource("day$day")
+        val url = d.javaClass.classLoader.getResource(packageName.replace('.', '/') + "day$day")
         val input = url.readText()
         val parsed1 = d.parse(input)
         println("Part1: " + d.part1(parsed1))

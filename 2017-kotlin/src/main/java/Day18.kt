@@ -1,4 +1,4 @@
-import java.util.*
+import net.zomis.advent.Day
 import java.util.concurrent.BlockingQueue
 import java.util.concurrent.LinkedBlockingQueue
 
