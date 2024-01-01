@@ -24,6 +24,10 @@ fun main(args: Array<String>) {
         val parsed1 = d.parse(input)
         println("Part1: " + d.part1(parsed1))
 
+        if (d.testCase2() != null) {
+            println("Test Part2: " + d.part2(d.parse(d.testCase2()!!)))
+        }
+
         val parsed2 = d.parse(input)
         println("Part2: " + d.part2(parsed2))
         println()
