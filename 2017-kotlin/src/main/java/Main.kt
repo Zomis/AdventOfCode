@@ -14,6 +14,11 @@ fun main(args: Array<String>) {
             continue
         }
         println("Load $day")
+
+        if (d.testCase1() != null) {
+            println("Test Part1: " + d.part1(d.parse(d.testCase1()!!)))
+        }
+
         val url = d.javaClass.classLoader.getResource(packageName.replace('.', '/') + "day$day")
         val input = url.readText()
         val parsed1 = d.parse(input)
